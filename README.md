@@ -66,7 +66,17 @@ Latent Dirichlet Allocation (LDA) aims to model documents as arising from multip
 ![latent dirichlet allocation](images/lda.png)
 
 * LDA in sklearn: [here](https://scikit-learn.org/stable/modules/decomposition.html#latent-dirichlet-allocation-lda)
+### LDA Topic Explanations
+We classify each 8-K documents into different topics based on its highest probability of the specific topic. We then screen the most common words appeared in each topic across these text information. By the similarity of the 8-K information, we concluded on giving a literal meaning of each topics as below.
 
+Topic 1:    Topic2:    Topic3:    Topic4:    Topic5:    
+Topic6: Board of director member change.  
+Topic7: Vote result for shareholders and appointment of new public audit company.
+Topic8: Amendment of agreement(all different agreement)
+Topic9: Realease Results of Operations and Financial Condition
+Topic10: Regulation FD disclosure and change in orginization structure
+
+(Most of the topic sentiment is neutral.)
 ### Resources
 * [Topic Models (Blei and Lafferty)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.186.4283&rep=rep1&type=pdf)
 * [Hierarchical Dirichlet Processes (gensim)](https://www.stat.berkeley.edu/~aldous/206-Exch/Papers/hierarchical_dirichlet.pdf)
